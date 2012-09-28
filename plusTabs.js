@@ -83,7 +83,7 @@
 	      $allTabs = $plusTabs.find(".allTabs");
 	    $allTabs.css(
 	    {
-	      "top": activeTabHeight,
+	      "top": uiTabsHeight,
 	      "width": o.dropWidth
 	    });
 	    //$plusTabs.find(".allTabs").css("width", moreActiveTab);
