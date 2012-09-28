@@ -168,6 +168,6 @@
     showCount: false,
     expandIcon: "&#9660; ",
     dropWidth: "66%",
-    sizeTweak: "0"
+    sizeTweak: 0
   };
 })(jQuery);
