@@ -79,11 +79,11 @@
 	      moreActiveTab = ATBwidth - seeMoreWidth - o.sizeTweak;
 	    $uiTabsNav.find("li.ui-state-active").css("width", moreActiveTab);
 	    // position .allTabs
-	    var activeTabHeight = $uiTabsNav.find("li.ui-state-active").outerHeight(),
+	    var uiTabsHeight = $uiTabsNav.outerHeight(),
 	      $allTabs = $plusTabs.find(".allTabs");
 	    $allTabs.css(
 	    {
-	      "top": activeTabHeight - 2,
+	      "top": activeTabHeight,
 	      "width": o.dropWidth
 	    });
 	    //$plusTabs.find(".allTabs").css("width", moreActiveTab);
