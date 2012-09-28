@@ -24,7 +24,8 @@
  *  			seeMoreText: "More", //set see more text
  *  			showCount: false, //show drop down count
  *  			expandIcon: "&#9660; ", //icon/caret - if using image, specify image width
- *  			dropWidth: "66%" //width of dropdown
+ *  			dropWidth: "66%", //width of dropdown
+ *			sizeTweak: 0 //adjust size of active tab to tweak "see more" layout
  *  		});
  * 
  */
