@@ -3,6 +3,8 @@ plusTabs
 
 plugin to interact with jQuery UI tabs when there are too many tabs.
 
+Plugin only renders "see more" tab/behavior when there are enough tabs to break to a second line - otherwise, tabs render normally. 
+
 ![plusTabs](http://dl.dropbox.com/u/53529463/plusTabs/plusTabs.png "plusTabs")
 
 Demo:
