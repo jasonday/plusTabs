@@ -28,6 +28,14 @@
  *  		});
  * 
  */
+/*!
+ * plusTabs v1
+ *
+ * Updated: August 24, 2012
+ * Requires: jQuery v1.6+
+ *
+ * Description:
+ */
 (function ($)
 {
   var methods = {
@@ -42,13 +50,8 @@
 	var o = options,
 	  $plusTabs = $(this);
 	
-	if ($plusTabs.data('tabs-initialized'))
-	{
-	  $plusTabs.data('tabs-initialized', true);
-	  
 	  // add class plusTabs for tabs styling
 	  (o.className != '') && $plusTabs.addClass(o.className);
-	  
 	  //initiate jQuery UI Tabs
 	  $plusTabs.tabs();
 
@@ -75,7 +78,6 @@
 	    var seeMoreWidth = $(".seeMore").outerWidth(),
 	      moreActiveTab = ATBwidth - seeMoreWidth - 2;
 	    $uiTabsNav.find("li.ui-state-active").css("width", moreActiveTab);
-	    
 	    // position .allTabs
 	    var activeTabHeight = $uiTabsNav.find("li.ui-state-active").outerHeight(),
 	      $allTabs = $plusTabs.find(".allTabs");
@@ -84,15 +86,13 @@
 	      "top": activeTabHeight - 2,
 	      "width": o.dropWidth
 	    });
-	    
+	    //$plusTabs.find(".allTabs").css("width", moreActiveTab);
 	    // Highlight active tab in allTabs dropdown
 	    $allTabs.find("a").removeClass("highlight");
 	    var selectedText = $uiTabsNav.find("li.ui-state-active a").text(),
 	      allTabsSelected = $allTabs.find('a:contains("' + selectedText + '")');
 	    $plusTabs.find(allTabsSelected).addClass("highlight");
-	  } //end showActiveTab
-	  
-	  
+	  }
 	  var $uiTabsNav = $plusTabs.find('.ui-tabs-nav');
 	  // get total width of all tabs of current product
 	  var ATBwidth = $plusTabs.outerWidth();
@@ -141,11 +141,7 @@
 	  {
 	    clearTimeout(timer);
 	  });
-	}
-	else
-	{
-	  return
-	}
+	
       });
     }
   };
