@@ -5,7 +5,7 @@
  *
  * (c) 2012, Jason Day
  *
- * Licensed under the GPL license - http://www.gnu.org/licenses/
+ * Dual licensed under the MIT and GPL licenses
  * 
  * Dependencies: jQuery v1.6+, jQuery UI 1.8+
  * 
