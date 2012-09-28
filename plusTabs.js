@@ -76,7 +76,7 @@
 	    }
 	    // set active tab width
 	    var seeMoreWidth = $(".seeMore").outerWidth(),
-	      moreActiveTab = ATBwidth - seeMoreWidth - 2;
+	      moreActiveTab = ATBwidth - seeMoreWidth - o.sizeTweak;
 	    $uiTabsNav.find("li.ui-state-active").css("width", moreActiveTab);
 	    // position .allTabs
 	    var activeTabHeight = $uiTabsNav.find("li.ui-state-active").outerHeight(),
@@ -167,6 +167,7 @@
     seeMoreText: "More",
     showCount: false,
     expandIcon: "&#9660; ",
-    dropWidth: "66%"
+    dropWidth: "66%",
+    sizeTweak: "0"
   };
 })(jQuery);
