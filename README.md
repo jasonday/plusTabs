@@ -24,9 +24,18 @@ Usage:
         dropWidth: "66%",         // width of dropdown list
         sizeTweak: 0              // # of pixels to subtract from active tab to adjust placement of "see more"
     });
-    
-    
-    
+
+
+TODO:
+=====
+
+ * remove dropwidth option (leave width to css styling)
+ * add option - only move tabs to dropdown if they break to a second line ( versus current state, where all tabs move to dropdown if any tabs break to second line )
+ * move drop placement out of plugin and into css (originally in code due to my own needs)
+ * include cursor tabbing behavior for drop
+ * Others? Unicorns?
+
+
 License
 =======
 Dual licensed under the MIT and GPL licenses:
