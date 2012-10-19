@@ -29,6 +29,7 @@ Usage:
 TODO:
 =====
 
+ * default selected tab option 
  * remove dropwidth option (leave width to css styling)
  * add option - only move tabs to dropdown if they break to a second line ( versus current state, where all tabs move to dropdown if any tabs break to second line )
  * move drop placement out of plugin and into css (originally in code due to my own needs)
