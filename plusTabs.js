@@ -123,25 +123,31 @@
 	  // "see more" functionality
 	  // show all tabs drop down with a timer
 	  var timer, $allTabs = $plusTabs.find(".allTabs");
-	  $plusTabs.find('.seeMore a').bind("click", function ()
-	  {
-	    $allTabs.slideDown('fast');
-	    timer = setTimeout(function ()
-	    {
-	      $allTabs.slideUp('fast')
-	    }, 1500);
-	  });
-	  $allTabs.mouseout(function ()
-	  {
-	    timer = setTimeout(function ()
-	    {
-	      $allTabs.slideUp('fast')
-	    }, 500);
-	  });
-	  $allTabs.mouseover(function ()
-	  {
-	    clearTimeout(timer);
-	  });
+	  $plusTabs.find(".seeMore a").click(function() {
+			clearTimeout(timeout);
+			$allTabs.slideDown();
+			timeout = setTimeout(function() {
+			    $allTabs.slideUp();
+			    clearTimeout(timeout);
+			}, 3000)
+			});
+		    $plusTabs.find(".seeMore a").keydown(function(e) {
+			if (e.which === 13) {
+			    $allTabs.find("a:first").focus();
+			    }
+		    });
+		    
+		    $allTabs.mouseenter(function() {
+			clearTimeout(timeout);
+			});
+		    
+		    $allTabs.mouseleave(function() {
+			clearTimeout(timeout);
+			var $this = $(this)
+			    timeout = setTimeout(function() {
+			    $this.slideUp()
+			    }, 1000)
+			});
 	
       });
     }
