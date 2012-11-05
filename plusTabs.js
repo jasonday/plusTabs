@@ -1,4 +1,4 @@
-/*!
+/*
  * plusTabs version 1.0
  *
  * Author: Jason Day @iamjasonday
@@ -29,14 +29,7 @@
  *  		});
  * 
  */
-/*!
- * plusTabs v1
- *
- * Updated: August 24, 2012
- * Requires: jQuery v1.6+
- *
- * Description:
- */
+
 (function ($)
 {
   var methods = {
