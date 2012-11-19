@@ -115,7 +115,7 @@
 	  } /*end if o.seeMore === "true" */
 	  // "see more" functionality
 	  // show all tabs drop down with a timer
-	  var timer, $allTabs = $plusTabs.find(".allTabs");
+	  var timeout, $allTabs = $plusTabs.find(".allTabs");
 	  $plusTabs.find(".seeMore a").click(function() {
 			clearTimeout(timeout);
 			$allTabs.slideDown();
