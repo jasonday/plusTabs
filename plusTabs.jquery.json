@@ -3,8 +3,8 @@
   "title": "jQuery plusTabs",
   "description": "plugin to interact with jQuery UI tabs when there are too many tabs.",
   "keywords": [
-    "color",
-    "animation"
+    "tabs",
+    "jquery-ui"
   ],
   "version": "1.0",
   "author": {
