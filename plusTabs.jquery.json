@@ -6,7 +6,7 @@
     "tabs",
     "jquery-ui"
   ],
-  "version": "1.1",
+  "version": "0.1.1",
   "author": {
     "name": "Jason Day",
     "url": "https://github.com/jasonday/plusTabs"
@@ -15,7 +15,7 @@
     {
       "name": "Jason Day",
       "email": "movemaine@gmail.com",
-      "url": "http://www.rathernerdy.com"
+      "url": "https://github.com/jasonday/"
     }
   ],
   "licenses": [
